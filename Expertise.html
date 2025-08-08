@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Doctorapol | Expertise</title>
+  <link rel="stylesheet" href="assets/css/variables.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+  </head>
+  <body>
+    
+    <!-- Include header -->
+  <div id="header-placeholder"></div>
+
+    <main class="container expertise-section">
+      <section class="left">
+        <h1>My Expertise</h1>
+        <p>Below are the areas I specialize in. Each item reflects my experience and growth.</p>
+
+        <ul class="expertise-list">
+          <li><strong>Android App Development</strong> – Utilities & automation tools.</li>
+          <li><strong>Frontend Web Design</strong> – HTML, CSS, responsive layouts.</li>
+          <li><strong>UI/UX Customization</strong> – Tailored interfaces and theming.</li>
+          <li><strong>Terminal & Linux Tools</strong> – Lightweight command-line workflows.</li>
+          <li><strong>Personal AI Integration</strong> – Building assistants with local data.</li>
+        </ul>
+      </section>
+
+      <section class="right">
+        <img src="assets/images/profile.jpg" alt="Expertise Illustration" />
+      </section>
+    </main>
+
+    <!-- Include footer -->
+    <div id="footer-placeholder"></div>
+
+    <!-- JS Includes -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/transitions.js"></script>
+    <script>
+      // Load reusable header & footer
+      fetch("components/header.html").then(res => res.text()).then(data => {
+        document.getElementById("header-placeholder").innerHTML = data;
+      });
+      fetch("components/footer.html").then(res => res.text()).then(data => {
+        document.getElementById("footer-placeholder").innerHTML = data;
+      });
+    </script>
+  </body>
+</html>
+

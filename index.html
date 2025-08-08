@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Doctorapol | Romer</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Doctorapol - Portfolio of Romer S. Rioja, Frontend Developer and Tech Enthusiast. View projects, skills, and contact.">
+  <meta name="keywords" content="Romer Rioja, Doctorapol, frontend developer, portfolio, tech, HTML, CSS, JavaScript">
+  <meta name="author" content="Romer S. Rioja">
+
+  <!-- Open Graph for social media -->
+  <meta property="og:title" content="Doctorapol - Romer S. Rioja">
+  <meta property="og:description" content="Frontend Developer | Tech Enthusiast. Explore Romer's portfolio.">
+  <meta property="og:image" content="assets/images/bg/profile.jpg">
+  <meta property="og:url" content="https://yourwebsite.com">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Doctorapol - Romer S. Rioja">
+  <meta name="twitter:description" content="Frontend Developer | Tech Enthusiast. Explore Romer's portfolio.">
+  <meta name="twitter:image" content="assets/images/bg/profile.jpg">
+</head>
+
+<body>
+  <div id="header-container"></div>
+
+  <main>
+    <section class="left">
+      <h3>Hello, I'm</h3>
+      <h1>Romer S. Rioja</h1>
+      <h4>Technology specialist.<br>Frontend Developer Enthusiast</h4>
+      <p>I just finished building my portfolio website (with only 17 coffee breaks and 3 broken divs).<br><br>
+      Thanks a lot for visiting — really appreciate it!<br>
+      Feel free to check out my services — free consultation included.<br>
+      Your friendly neighborhood digital handyman 🧑‍💻 (now with 20% more semicolons and 0% bugs... hopefully).</p>
+      <a href="contact.html" class="btn">Click ME</a>
+    </section>
+
+    <section class="right">
+      <img src="assets/images/profile.jpg" alt="Profile Image">
+    </section>
+  </main>
+
+  <div id="footer-container"></div>
+
+  <script>
+    // Load header and footer dynamically
+    fetch("components/header.html").then(res => res.text()).then(data => {
+      document.getElementById("header-container").innerHTML = data;
+    });
+
+    fetch("components/footer.html").then(res => res.text()).then(data => {
+      document.getElementById("footer-container").innerHTML = data;
+    });
+  </script>
+</body>
+</html>

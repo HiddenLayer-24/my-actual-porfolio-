@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Doctorapol | About</title>
+  <link rel="stylesheet" href="assets/css/variables.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+  </head>
+  <body>
+    
+    <!-- Include header -->
+  <div id="header-placeholder"></div>
+ <!-- Include footer -->
+ 
+ 
+ 
+    <div id="footer-placeholder"></div>
+
+    <!-- JS Includes -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/transitions.js"></script>
+    <script>
+      // Load reusable header & footer
+      fetch("components/header.html").then(res => res.text()).then(data => {
+        document.getElementById("header-placeholder").innerHTML = data;
+      });
+      fetch("components/footer.html").then(res => res.text()).then(data => {
+        document.getElementById("footer-placeholder").innerHTML = data;
+      });
+    </script>
+  </body>
+</html>
